@@ -80,7 +80,7 @@ const Template = {
   },
   getPokemonFilteredTemplate: (pokemon) => {
     const pokemonTemplate = `<div class="col-sm-3 m-auto">
-      <div class="card rounded-3 ">
+      <div class="card rounded-3 ${pokemon.types[0].type.name}">
         <img class="card-img-top p-5" src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" alt="...">
         <div class="card-body">
           <h5 class="card-title text-center">${pokemon.name}</h5>
@@ -94,22 +94,22 @@ const Template = {
     return `
     <div class="container">
     <div class="controls">
-    <nav aria-label="Page navigation">
-    <ul class="pagination mb-0">
-      <li class="page-item">
-        <div class="page-link prev ${urlPrev ? 'd-block' : 'd-none'}" aria-label="Previous">
-        &laquo;
-        </div>
-      </li>
-      <li class="page-item"><a class="page-link" href="!#">${paginaAtual}</a></li>
-      <li class="page-item">
-        <div class="page-link next ${urlNext ? 'd-block' : 'd-none'}" aria-label="Next">
-        &raquo;
-        </div>
-      </li>
-    </ul>
-  </nav>
-  <div class="qty-itens">Total de itens: ${totalitens}</div>
+      <div class="qty-itens">Total de itens: ${totalitens}</div>
+      <nav aria-label="Page navigation">
+      <ul class="pagination mb-0">
+        <li class="page-item">
+          <div class="page-link prev ${urlPrev ? 'd-block' : 'd-none'}" aria-label="Previous">
+          &laquo;
+          </div>
+        </li>
+        <li class="page-item"><a class="page-link" href="!#">${paginaAtual}</a></li>
+        <li class="page-item">
+          <div class="page-link next ${urlNext ? 'd-block' : 'd-none'}" aria-label="Next">
+          &raquo;
+          </div>
+        </li>
+      </ul>
+    </nav>
   </div>
 
   </div>`

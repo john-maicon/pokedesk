@@ -22,11 +22,14 @@
       background: #EFEFBB;
       background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
       font-family: 'Inter', sans-serif;
+      padding: 2rem 0;
     }
     h5, h1 {color: #41464b}
     h1{margin-bottom: 4rem}
+    form input{
+      height: 4rem;
+    }
     form .btn {
-      width: 25%;
       height: 4rem;
       display: flex;
       align-items: center;
@@ -38,7 +41,6 @@
       font-size: 1.5rem;
       font-weight: 600;
       transition: background-color 0.2s;
-      margin-left: 3rem;
     }
     .btn:hover {background-color: #5965e0a3}
     .pokemon .card:hover {
@@ -48,14 +50,10 @@
     #paginate .controls {
       display: flex;
       align-items: center;
-      justify-content: center;
       position: relative;
       margin-top: 4rem;
       margin-bottom: 4rem;
-    }
-    .qty-itens{
-      position: absolute;
-      right: 0;
+      justify-content: space-between;
     }
     #paginate .controls .page-link{
       cursor: pointer;
@@ -103,9 +101,13 @@
     <div class="container mt-5">
       <h1 class="text-center">Pokedesk</h1>
       <form id="form-pokemon" method="GET">
-        <div class="d-flex pb-4 justify-content-between">
-          <input type="text" id="name-pokemon" class="form-control" placeholder="Digite o nome do pokemon">
-          <button type="submit" class="btn btn-primary btn-search">Pesquisar</button>
+          <div class="row">
+            <div class="col-md-8 col-sm-12 mb-3">
+              <input type="text" id="name-pokemon" class="form-control" placeholder="Digite o nome do pokemon">
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <button type="submit" class="btn btn-primary btn-search w-100">Pesquisar</button>
+            </div>
         </div>
       </form>
     </div>
