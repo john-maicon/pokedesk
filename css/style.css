@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #EFEFBB;
+  background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+  font-family: 'Inter', sans-serif;
+  padding: 2rem 0;
+}
+h5, h1 {color: #41464b}
+h1{margin-bottom: 4rem}
+form input{
+  height: 4rem;
+}
+form .btn {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 5px;
+  background: #5965e0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+.btn:hover {background-color: #5965e0a3}
+.pokemon .card:hover {
+  padding: 1rem;
+  cursor: pointer;
+}
+#paginate .controls {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+}
+#paginate .controls .page-link{
+  cursor: pointer;
+}
+.total-itens {position: absolute; right: 0}
+.steel {background-color: #f4f4f4}
+.fire {background-color: #FDDFDF}
+.grass {background-color: #DEFDE0}
+.electric {background-color: #FCF7DE}
+.water, .ice {background-color: #DEF3FD}
+.ground {background-color: #f4e7da}
+.rock {background-color: #d5d5d4}
+.fairy {background-color: #fceaff}
+.poison {background-color: #98d7a5}
+.bug {background-color: #f8d5a3}
+.dragon {background-color: #97b3e6}
+.psychic {background-color: #eaeda1}
+.flying {background-color: #F5F5F5}
+.fighting {background-color: #E6E0D4}
+.normal {background-color: #F5F5F5}
+.box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .dropdown-menu li:hover {
+  background-color: #e9ecef;
+}
+.box .dropdown-menu input{
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: 0;
+  width: 100%;
+  padding-left: 1rem;
+}
