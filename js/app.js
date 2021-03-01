@@ -52,7 +52,6 @@ const Renderer = {
     $paginate.innerHTML =  Template.getPaginateTemplate(urlNext,urlPrev,totalitens,paginaAtual)
   },
   renderBotaoBackList: (paginaAtual, $btnBackList) => {
-    console.log(paginaAtual)
     $btnBackList.innerHTML = paginaAtual !== null && paginaAtual > 1 ?  `<button id="btn-back-list" type="button" class="btn btn-outline-secondary btn-sm back-list shadow-none">Voltar ao início</button>`: ''
   },
   renderDropdownOptionQtyItens: (error, $dropdownMenuButtonPage) => {
